@@ -53,3 +53,59 @@ elif var_j=="n":
     print ("You do not like coding oh ", var_i)
 else:
     print ("Error!, Please enter the valid key either y or n")
+
+#Nested If statements
+#Seventh Code
+var_k = 20
+var_l = "yessss"
+if var_k>18:
+    print ("You are eligible for driving license")
+    if var_l=="yessss":
+        print("You have driving license, do not submit application again")
+    elif var_l=="no":
+        print("you can submit application online")
+elif var_k==18:
+    print ("you have to wait for one more year to submit application")
+else:
+    print ("You are a minor cannot have license")
+    
+# Eighth Code
+var_m = input("Please Enter Your name: \n")
+var_n = int(input("Please Enter your age: \n"))
+
+if var_n == 18:
+    print("You have to wait for a year to submit application")
+
+elif var_n > 18:
+    var_o = input("Do you have a driving license? Enter yes or no: ")
+
+    if var_o == "yes":
+        var_p = input("Is it expired? Enter yes or no: ")
+
+        if var_p == "yes":
+            print("You can submit application online.")
+
+        elif var_p == "no":
+            print("Not expired means you want to add category?")
+            var_q = input("Do you want to add category? Enter yes or no: ")
+
+            if var_q == "yes":
+                print("You can submit application online.")
+
+            elif var_q == "no":
+                print("You cannot submit a new application as you already have a valid license.")
+
+            else:
+                print("Please enter a correct response.")
+
+        else:
+            print("Please enter a correct response.")
+
+    elif var_o == "no":
+        print("Please submit an application online.")
+
+    else:
+        print("Please enter a correct response.")
+
+else:
+    print("You are a minor and cannot submit an application until you are older than 18.")
