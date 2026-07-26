@@ -1,5 +1,4 @@
 #For loop in python
-#Simple for loop
 #First Code
 var_a = 1
 print ("The loop shall print 1 5 times ")
